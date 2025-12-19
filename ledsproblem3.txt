@@ -1,0 +1,16 @@
+PROBLEM: 8-BIT LED COUNTER
+
+You have 8 LEDs stored in a variable leds. Each bit represents one LED (0 = OFF, 1 = ON).
+
+TASKS:
+1. Start with leds = 0 (all OFF)
+2. Count from 0 to 255 using the LEDs — treat leds as an 8-bit binary number
+3. For each number, print the binary pattern (bin(leds))
+4. Increment leds by 1 each step using bitwise operators only (no +1 operator allowed)
+
+RULES / TIPS:
+1. Think of adding 1 in binary manually using XOR and AND
+    - XOR ^ → flips bits
+    - AND & → determines carry
+2. You might need a carry variable that moves through bits
+3. Don’t use += or +1, simulate addition using bitwise operations

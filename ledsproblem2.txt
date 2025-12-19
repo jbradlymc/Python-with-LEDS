@@ -1,0 +1,15 @@
+PROBLEM: RUNNING LED
+
+You have 8 LEDs (bits 0–7) stored in a variable leds.
+
+TASKS:
+1. Turn ON LEDs one at a time from LED0 → LED7 using a loop
+2. After turning ON each LED, print the binary value of leds
+3. After the loop, turn OFF all LEDs
+4. Bonus: Try doing it using bit shifting instead of individual masks
+
+RULES / TIPS:
+1. Use << to move a 1 across bits
+2. You can use leds |= ... to turn ON a LED
+3. You can reset leds = 0 to turn all LEDs OFF
+4. Use bin(leds) to print the LED pattern

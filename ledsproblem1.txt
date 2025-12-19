@@ -1,0 +1,14 @@
+PROBLEM: LED CONTROLLER
+
+You have 8 LEDs, each represented by a bit in the variable leds:
+
+TASKS:
+1. Turn ON LED0, LED3, and LED7
+2. Check if LED5 is ON, and print "LED5 is ON" or "LED5 is OFF"
+3. Toggle LED3 (ON → OFF or OFF → ON)
+4. Print the final binary value of leds
+
+RULES / TIPS:
+1. Use only bitwise operators (|, &, ^, ~, <<)
+2. Don’t use decimal numbers directly
+3. Think of each LED as a switch
