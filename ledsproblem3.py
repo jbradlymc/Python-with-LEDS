@@ -9,4 +9,16 @@ LED7 = 1 << 7  # 10000000
 
 leds = 0
 
-# to be continued...
+for i in range(256):
+    print(bin(leds))
+    # Increment leds by 1 using bitwise operations
+    carry = 1
+
+    for j in range(8):
+        if carry == 0:
+            break
+        if leds & (1 << j):
+            leds &= ~(1 << j)  # Turn off the bit
+        else:
+            leds |= (1 << j)   # Turn on the bit
+            carry = 0
